@@ -1,6 +1,6 @@
 let app = require('./app')
 
-app.set("port", process.env.PORT || 9000);
+app.set("port", process.env.PORT || 9500);
 let server = app.listen(app.get("port"))
 
 server.on('listening', ()=> console.log("Server is listening"))

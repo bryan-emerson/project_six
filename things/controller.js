@@ -1,4 +1,4 @@
-let Character = require('./charMmodel')
+let Character = require('./charModel')
 
 let controller = {
   create(request, response){
