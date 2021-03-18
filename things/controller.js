@@ -1,5 +1,8 @@
 let Character = require('./charModel')
 
+//require ./things/router??
+
+
 let controller = {
   create(request, response){
     let character = request.body
@@ -14,6 +17,7 @@ let controller = {
       .then(characters=> response.json(characters))
   },
   readAll(request, response){
+    console.log(request)
     Character
       .find({})
       .then(characters=> response.json(characters))
