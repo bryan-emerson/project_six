@@ -7,5 +7,7 @@ const charSchema = new Schema({
   url: String
 });
 
-let charModel = mongoose.model("Character", charSchema)
-module.exports = charModel
+// let Character = mongoose.model("Character", charSchema)
+// module.exports = Character
+
+module.exports = mongoose.model("Character", charSchema);

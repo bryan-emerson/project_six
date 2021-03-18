@@ -1,7 +1,7 @@
 require('./connection.js')
 let mongoose = require('mongoose')
 let charJson = require('./chars.json')
-let charModel = require('./charModel.js')
+let Character = require('../things/charModel.js')
 
 charModel
   .deleteMany({})
