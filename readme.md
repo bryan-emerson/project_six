@@ -29,7 +29,7 @@ http get https://six2121.herokuapp.com/things/6054967274542d00157732ba
 ```
 
 #### PUT
-For PUT requests you must use an ID on the end of the root directory. PUT requests must include information for updating the target object. They can be added in key value pairs at the end of the request. The key value pairs should be written out as ```<key>=<value>``` Those requests would look as follows:
+For PUT requests you must use an ID on the end of the root directory. PUT requests must include information for updating the target object. The information to be updated can be added in key value pairs at the end of the request. The key value pairs should be written out as ```<key>=<value>``` Those requests would look as follows:
 
 
 
