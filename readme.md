@@ -10,9 +10,9 @@ GET, POST, PUT, and DELETE requests are all possible.
 the root directory is
 ```
 https://six2121.herokuapp.com/things
+```
 
-
-GET
+####GET
 ```
 for example, a get request would be made like this from the CLI
 
@@ -26,8 +26,9 @@ By adding an ID number to the end of the root directory you can make a targeted 
 http get https://six2121.herokuapp.com/things/6054967274542d00157732ba
 ```
 
-PUT
+####PUT
 For PUT requests you must use an ID on the end of the root directory. PUT requests must include information for updating the target object. They can be added in key value pairs at the end of the request. The key value pairs should be written out as ```<key>=<value>``` Those requests would look as follows:
+
 
 
 ```
@@ -36,14 +37,14 @@ http put https://six2121.herokuapp.com/things/6054967274542d00157732ba name=brya
 the above request would change the name in the target object to bryanEmerson
 
 
-DELETE
+####DELETE
 For Delete requests you must use an ID on the end of the root directory. Those requests would look as follows:
 ```
 http delete https://six2121.herokuapp.com/things/6054967274542d00157732ba
 ```
 the above request would delete the target object from the database.
 
-POST
+####POST
 For Post requests you use the root directory and add your key value pairs at the end. The key value pairs should be written out as ```<key>=<value>``` Those requests would look as follows:
 ```
 http post https://six2121.herokuapp.com/things/ uid=12 name=bryan url=www.google.com
