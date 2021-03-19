@@ -1,2 +1,2 @@
-require('./database')
+require('./things/database')
 require('./server')
