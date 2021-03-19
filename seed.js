@@ -5,6 +5,6 @@ let Character = require('./things/charModel.js')
 
 Character
   .deleteMany({})
-  .then(()=> charModel.create(charJson))
+  .then(()=> Character.create(charJson))
   .then(mongoose.disconnect)
   .then(()=> console.log('seeding done!'))
