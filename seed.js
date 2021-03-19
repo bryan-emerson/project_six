@@ -3,7 +3,7 @@ let mongoose = require('mongoose')
 let charJson = require('./chars.json')
 let Character = require('./things/charModel.js')
 
-charModel
+Character
   .deleteMany({})
   .then(()=> charModel.create(charJson))
   .then(mongoose.disconnect)
