@@ -9,10 +9,9 @@ router.post('/', controller.create)
 router.put('/:id', controller.update)
 router.delete('/:id', controller.destroy)
 
+
+//sample dummy route for checking out route
 // router.get('/', (req, res)=> {res.json({message: "hitting things index"})})
-// router.get('/:id', controller.readById)
-// router.post('/', controller.create)
-// router.put('/:id', controller.update)
-// router.delete('/:id', controller.destroy)
+
 
 module.exports = router
