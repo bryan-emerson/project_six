@@ -1,10 +1,11 @@
 # CRUD Star Wars API
 
-this project is a cloud based API with full CRUD functionality.  You can find and edit information about some of your favorite Star wars characters on this API. Technologies used include Javascript, Express, MongoDB, Mongoose, & Heroku.
+This project is a cloud based API with full CRUD functionality. You can find and edit information about some of your favorite Star wars characters on this API. Technologies used include Javascript, Express, MongoDB, Mongoose, & Heroku.
 
+![game play photo](./image/starWarsAPI.png)
 
 ## Usage
-you can access the API from the CLI by using http requests.
+You can access the API from the CLI by using http requests.
 
 GET, POST, PUT, and DELETE requests are all possible.
 the root directory is
@@ -15,14 +16,13 @@ https://six2121.herokuapp.com/things
 
 #### GET
 
-for example, a get request would be made like this from the CLI
+For example, a get request would be made like this from the CLI
 
 ```
 http get https://six2121.herokuapp.com/things/
 ```
 
-the above get request to the root directory will return all characters in the API.
-By adding an ID number to the end of the root directory you can make a targeted GET request. Each character ID has an "_id" in their respective object in the API for this purpose. this type of request would look like this:
+The above get request to the root directory will return all characters in the API. By adding an ID number to the end of the root directory you can make a targeted GET request. Each character ID has an "_id" in their respective object in the API for this purpose. This type of request would look like this:
 
 ```
 http get https://six2121.herokuapp.com/things/6054967274542d00157732ba
@@ -37,7 +37,7 @@ For PUT requests you must use an ID on the end of the root directory. PUT reques
 http put https://six2121.herokuapp.com/things/6054967274542d00157732ba name=bryanEmerson
 ```
 
-the above request would change the name in the target object to bryanEmerson
+The above request would change the name in the target object to bryanEmerson
 
 
 #### DELETE
@@ -48,7 +48,7 @@ For Delete requests you must use an ID on the end of the root directory. Those r
 http delete https://six2121.herokuapp.com/things/6054967274542d00157732ba
 ```
 
-the above request would delete the target object from the database.
+The above request would delete the target object from the database.
 
 #### POST
 For Post requests you use the root directory and add your key value pairs at the end. The key value pairs should be written out as ```<key>=<value>``` Those requests would look as follows:
@@ -59,7 +59,7 @@ http post https://six2121.herokuapp.com/things/ uid=12 name=bryan url=www.google
 ```
 
 
-the above request would create a new object in the API as follows:
+The above request would create a new object in the API as follows:
 
 ```
 {
